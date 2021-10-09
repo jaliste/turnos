@@ -91,7 +91,13 @@
   </v-container>
 </template>
 
-<script>
+<script> 
+  import * as dfd from "danfojs/dist/index"
+
+  s = new dfd.Series([1,3,5,undefined,6,8])
+  console.log(s.print())
+
+
   export default {
     name: 'HelloWorld',
 
